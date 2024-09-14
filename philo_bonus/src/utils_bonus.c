@@ -43,7 +43,7 @@ void	stenographer(t_phils *info, char *str)
 {
 	info->end_time = timer();
 	sem_wait(info->death->writing);
-	printf("%lld #%d %s\n", info->end_time - info->og_time, info->ind, str);
+	printf("%lld %d %s\n", info->end_time - info->og_time, info->ind, str);
 	sem_post(info->death->writing);
 	info->end_time = timer();
 }

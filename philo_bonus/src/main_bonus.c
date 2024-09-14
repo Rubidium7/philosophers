@@ -106,7 +106,7 @@ int	main(int ac, char **av)
 	t_phils	info;
 
 	if (ac != 5 && ac != 6)
-		return (printf("incorrect input\n") - 16);
+		return (printf("Usage: ./philo_bonus <number_of_philos> <time_to_die> <time_to_eat> <time_to_sleep> [optional: <how_many_times_to_eat>]\n"), 1);
 	init_values(&info, av, ac);
 	if (!info.check || info.phil_n == 0)
 		return (1);

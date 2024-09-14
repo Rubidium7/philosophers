@@ -14,6 +14,8 @@
 # define PHILO_BONUS_H
 
 # include <sys/time.h>
+# include <fcntl.h>
+# include <sys/wait.h>
 # include <unistd.h>
 # include <stdio.h>
 # include <stdlib.h>
